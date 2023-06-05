@@ -1,0 +1,35 @@
+{
+    "author": "kylin",
+    "classifications": [
+        "micro",
+        "webapi"
+    ],
+    "identity": "Kylin_Template_Project",
+    "name": "Kylin_Template_Project",
+    "shortName": "ky",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Kylin_Template_Project",
+    "preferNameDirectory": "true",
+    "symbols": {
+        "EnableNlog": {
+            "type": "parameter",
+            "dataType": "bool", 
+            "defaultValue": "false"
+        }
+    },
+    "sources": [
+        {
+          "modifiers": [
+            {
+              "condition": "(!EnableNlog)", 
+              "exclude": [ 
+               "src/Kylin_Template_Project.API/nlog.config"
+              ]
+            }
+          ]
+        }
+       ] 
+}
